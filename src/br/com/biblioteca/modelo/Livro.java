@@ -1,6 +1,6 @@
 package br.com.biblioteca.modelo;
 
-public class livro {
+public class Livro implements Comparable<Livro> {
     private int id;
     private String titulo;
     private String autor;
@@ -9,7 +9,7 @@ public class livro {
     private String sinopse;
     private boolean disponivel;
 
-    public livro() {
+    public Livro() {
     }
 
     public int getId() {
@@ -41,7 +41,7 @@ public class livro {
     }
 
 
-    public livro(int id, String titulo, String autor, int ano, String genero, String sinopse, boolean disponivel) {
+    public Livro(int id, String titulo, String autor, int ano, String genero, String sinopse, boolean disponivel) {
         this.id = id;
         this.titulo = titulo;
         this.autor = autor;
@@ -65,5 +65,8 @@ public class livro {
                 '}';
     }
 
-
+    @Override
+    public int compareTo(Livro o) {
+        return this.titulo.compareTo(o.getTitulo());
+    }
 }
