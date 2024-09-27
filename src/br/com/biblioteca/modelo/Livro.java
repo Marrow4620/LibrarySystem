@@ -7,7 +7,7 @@ public class Livro implements Comparable<Livro> {
     private int ano;
     private String genero;
     private String sinopse;
-    private boolean disponivel;
+
 
     public Livro() {
     }
@@ -36,19 +36,16 @@ public class Livro implements Comparable<Livro> {
         return sinopse;
     }
 
-    public boolean isDisponivel() {
-        return disponivel;
-    }
 
 
-    public Livro(int id, String titulo, String autor, int ano, String genero, String sinopse, boolean disponivel) {
+
+    public Livro(int id, String titulo, String autor, int ano, String genero, String sinopse) {
         this.id = id;
         this.titulo = titulo;
         this.autor = autor;
         this.ano = ano;
         this.genero = genero;
         this.sinopse = sinopse;
-        this.disponivel = disponivel;
 
     }
 
@@ -61,7 +58,6 @@ public class Livro implements Comparable<Livro> {
                 ", ano=" + ano +
                 ", genero='" + genero + '\'' +
                 ", sinopse='" + sinopse + '\'' +
-                ", disponivel=" + disponivel +
                 '}';
     }
 

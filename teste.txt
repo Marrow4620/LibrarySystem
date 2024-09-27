@@ -1,0 +1,8 @@
+ Livro: {
+  "id": 0,
+  "titulo": "Test Critiques",
+  "autor": "Daniel J. Keyser",
+  "ano": 1984,
+  "genero": "Business",
+  "sinopse": "Sem descrição"
+}
