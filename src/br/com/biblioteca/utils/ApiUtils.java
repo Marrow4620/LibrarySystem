@@ -14,7 +14,7 @@ import java.util.List;
 
 public class ApiUtils {
     public static List<Livro> buscarLivros(String tituloLivro, String nomeArquivo) throws IOException, InterruptedException, ErroApi {
-        String chave = "AIzaSyAj5EY72A3FzJ5bpSHmh8PCGNtUD1Qgg9E";
+        String chave = "";
         String endereco = "https://www.googleapis.com/books/v1/volumes?q=" + tituloLivro.replace(" ", "+") + "&key=" + chave;
 
         HttpClient client = HttpClient.newHttpClient();
